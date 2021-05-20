@@ -26,3 +26,20 @@ var test5 ="My name is\tAmirhossein\t\tMy family is\tOlyanasab"
 console.log(test5)
 var test6 = "My name is Amirhossein\\My family is Olyanasab"
 console.log(test6)
+var gender1 = true
+var gender2 = false
+if (gender1 == true)
+{
+    console.log("Man")
+}
+if(gender2 == false)
+{
+    console.log('Woman')
+}
+var test0;
+console.log(typeof(test0))
+var test7 = null
+console.log(test7)
+console.log(typeof(test7))
+console.log(null !== undefined)
+console.log(null === undefined)
