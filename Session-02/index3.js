@@ -48,3 +48,7 @@ console.log(data[3].family)
 //Last Index of Array
 console.log(data[data.length-1])
 
+
+//typeOf(null) => Object --- Why?
+console.log(typeof(null))
+
