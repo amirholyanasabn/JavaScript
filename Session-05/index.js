@@ -9,6 +9,9 @@ var timeoutId =setTimeout(function(){
 },3000)
 console.log(timeoutId)
 
-setInterval(function(){
+var intervalId = setInterval(function(){
     console.log('Salam')
+},1000)
+setTimeout(function(){
+    clearInterval(intervalId)
 },1000)
