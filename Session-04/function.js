@@ -37,17 +37,26 @@ sayHello()
 // }
 // anon()
 
-function sum(a, b, c, d){
+// function sum(a, b, c, d){
    
-    if (!c)  c=0
-    // if (c===undefined) 
-    //      c=0
-    // if (d===undefined)
-    //     d=0 
-    d = d || 0
-    var result = a+b+c+d
+//     if (!c)  c=0
+//     // if (c===undefined) 
+//     //      c=0
+//     // if (d===undefined)
+//     //     d=0 
+//     d = d || 0
+//     var result = a+b+c+d
+//     return result
+// }
+var result = 0
+function sum(a, b, c=0, d=0){
+    for(var item of arguments){ 
+        result = item + result
+    }
     return result
 }
+
+console.log('sum arguments is : '+sum(10,20,10))
 
 function sub(a, b){
     return a-b
