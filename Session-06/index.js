@@ -1,3 +1,14 @@
+var person = {
+    firstName : 'Amir',
+    lastName : 'Olyanasab',
+    getFullName : function (){
+        return this.firstName + ' ' +this.lastName
+    }
+}
+console.log(person)
+console.log(person.getFullName())
+
+
 function Person(firstName,lastName,age,gender,father){
     this.firstName = firstName
     this.lastName = lastName
