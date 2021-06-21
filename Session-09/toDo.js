@@ -31,5 +31,18 @@ root.appendChild(form)
 function addToDo(value){
     var todo = document.createElement('li')
     todo.textContent = value
+
+    var deletIcon = document.createElement('span')
+    deletIcon.textContent = 'X'
+    deletIcon.style.color = 'red'
+    deletIcon.style.cursor = 'pointer'
+    deletIcon.style.margin = '10px'
+
+    deletIcon.addEventListener('click',function(e){
+        e.target.parentElement.remove()
+    })
+    
+    todo.appendChild(deletIcon)
     todoList.appendChild(todo)
+   
 }
