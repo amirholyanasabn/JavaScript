@@ -1,0 +1,25 @@
+#input-div{
+    margin: 10px;
+    border: 2px solid dimgray;
+    border-style: outset;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: dimgray 2px 2px 2px 2px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:250px;
+    background-color: slategray;}
+#form-input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.submit-form{
+    margin-top: 10px;
+    background-color: forestgreen;
+    color: white;
+    border-radius: 5px;
+}
