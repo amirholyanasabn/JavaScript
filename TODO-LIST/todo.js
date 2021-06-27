@@ -3,42 +3,39 @@ var root = document.getElementById('root')
 var todo = document.createElement('ol')
 
 var form = document.createElement('form')
-
 form.addEventListener('submit',function (e){
     e.preventDefault()
     var task = document.querySelector('#task')
-    if (!task.value) return
+    if(!task.value) return
     addTodo(task.value)
     task.value = ''
 })
 var input = document.createElement('input')
-input.setAttribute('style','margin-left:20pox')
 input.setAttribute('type','text')
 input.setAttribute('id','task')
-input.setAttribute('placeholder','Schreiben hier')
+input.setAttribute('style','margin:20px;border-radius:5px')
 form.appendChild(input)
 
 var submit = document.createElement('input')
 submit.setAttribute('type','submit')
-submit.setAttribute('value','Pluse')
-submit.setAttribute('style','border-radius:5px')
-
+submit.setAttribute('value','Add')
+submit.setAttribute('style','margin:20px')
 form.appendChild(submit)
 
 function addTodo(value){
     var element = document.createElement('li')
     element.textContent = value
-    var deleteElement = document.createElement('span')
-    deleteElement.textContent = 'Löschen'
-    deleteElement.style.color = 'red'
-    deleteElement.style.margin = '10px'
-    deleteElement.style.cursor = 'pointer'
+    var deleteSpan = document.createElement('span')
+    deleteSpan.style.color = 'red'
+    deleteSpan.style.cursor = 'pointer'
+    deleteSpan.style.margin = '10px'
+    deleteSpan.textContent = 'X'
 
-    deleteElement.addEventListener('click',function (e){
+    deleteSpan.addEventListener('click',function (e){
         e.target.parentElement.remove()
     })
-    element.appendChild(deleteElement)
     todo.appendChild(element)
+    element.appendChild(deleteSpan)
 }
 root.appendChild(todo)
 root.appendChild(form)
