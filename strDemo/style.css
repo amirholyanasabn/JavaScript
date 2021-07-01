@@ -1,0 +1,25 @@
+body{
+    direction: rtl;
+    /* text-align: center; */
+}
+/* div {
+    height: 50px;
+} */
+#first-div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: yellow;
+    height: 100px;
+}
+#second-div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: blue;
+    height: 100px;
+}
+#third-div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    background-color: green;
+}
