@@ -1,0 +1,17 @@
+.product{
+    padding: 20px;
+}
+.product .item {
+    width: 400px;
+    box-shadow: var(--dark-color) 0 0 10px 0;
+    border-radius: var(--dimen-radius);
+}
+.product .item .image {
+    border-radius: var(--dimen-radius);
+}
+.product .item .description {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: var(--dimen-radius);
+}
